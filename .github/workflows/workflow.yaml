@@ -1,4 +1,4 @@
-name: Build and publish data package
+name: CI/CD for data package
 
 on: [push]
 
