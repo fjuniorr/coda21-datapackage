@@ -1,4 +1,4 @@
-name: Validate data package
+name: Build and publish data package
 
 on: [push]
 
@@ -29,4 +29,4 @@ jobs:
       - name: Publish data package to CKAN with dpckan
         env:
             CKAN_KEY: ${{ secrets.CKAN_KEY }} 
-        run: dpckan resource update --ckan-host https://homologa.cge.mg.gov.br/ --ckan-key $CKAN_KEY --resource-name estados --resource-id cefb9e7e-bfa3-4677-bacc-ad6c6c5fadb1
+        run: dpckan resource update --ckan-host https://homologa.cge.mg.gov.br/ --ckan-key "$CKAN_KEY" --resource-name estados --resource-id cefb9e7e-bfa3-4677-bacc-ad6c6c5fadb1
