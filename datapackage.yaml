@@ -1,0 +1,11 @@
+profile: data-package
+resources:
+  - dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: data
+    path: data/data.csv
+    profile: tabular-data-resource
+    schema: schemas/tableschema.yaml
